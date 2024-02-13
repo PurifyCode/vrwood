@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(NEW) Wii U Chat</title>
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"></script>
+</head>
+<body>
+    <video id="webcamera" autoplay playsinlne width="1200" height="600"></video>
+    <canvas id="canvas"></canvas>
+</body>
+<script>
+    const webcameraElement = document.getElementById("webcamera");
+    const canvasElement = document.getElementById("canvas");
+    const webcamera = new Webcam(webcameraElement, "user", canvasElement);
+    webcamera.start();
+</script>
+</html>
