@@ -10,13 +10,15 @@
     <video id="webcamera1" autoplay playsinlne width="600" height="600"></video>
     <video id="webcamera2" autoplay playsinlne width="600" height="600"></video>
     <canvas id="canvas"></canvas>
+    <canvas id="canvas2"></canvas>
 </body>
 <script>
     const webcameraElement = document.getElementById("webcamera1");
     const webcameraElement2 = document.getElementById("webcamera2");
     const canvasElement = document.getElementById("canvas1");
+    const canvasElement2 = document.getElementById("canvas2");
     const webcamera = new Webcam(webcameraElement, "env", canvasElement);
-    const webcamera2 = new Webcam(webcameraElement2, "env", canvasElement);
+    const webcamera2 = new Webcam(webcameraElement2, "env", canvasElement2);
     webcamera.start();
     webcamera2.start();
 </script>
