@@ -16,7 +16,9 @@
     const webcameraElement2 = document.getElementById("webcamera2");
     const canvasElement = document.getElementById("canvas1");
     const webcamera = new Webcam(webcameraElement, "env", canvasElement);
+    const webcamera2 = new Webcam(webcameraElement2, "env", canvasElement);
     webcamera.start();
+    webcamera2.start();
 </script>
     <style>
         #webcamera2 {
