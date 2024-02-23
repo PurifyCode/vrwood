@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>(NEW) Wii U Chat</title>
+    <title>VRWood</title>
     <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"></script>
 </head>
 <body>
@@ -17,6 +17,10 @@
     const webcameraElement2 = document.getElementById("webcamera2");
     const canvasElement = document.getElementById("canvas1");
     const canvasElement2 = document.getElementById("canvas2");
+    const ctx1 = canvasElement.getContext();
+    const ctx2 = canvasElement2.getContext();
+    ctx1.scale(-100,1)
+    ctx2.scale(-100,1)
     const webcamera = new Webcam(webcameraElement, "env", canvasElement);
     const webcamera2 = new Webcam(webcameraElement2, "env", canvasElement2);
     webcamera.start();
