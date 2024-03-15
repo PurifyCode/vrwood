@@ -7,8 +7,8 @@
     <script type="text/javascript" src="https://unpkg.com/webcam-easy@1.1.1/dist/webcam-easy.min.js"></script>
 </head>
 <body>
-    <video id="webcamera1" autoplay playsinlne width="360" height="360"></video>
-    <video id="webcamera2" autoplay playsinlne width="360" height="360"></video>
+    <video id="webcamera1" autoplay playsinlne width="-360" height="-360"></video>
+    <video id="webcamera2" autoplay playsinlne width="-360" height="-360"></video>
     <canvas id="canvas1"></canvas>
     <canvas id="canvas2"></canvas>
 </body>
@@ -19,8 +19,6 @@
     const canvasElement2 = document.getElementById("canvas2");
     const ctx1 = canvasElement.getContext("2d");
     const ctx2 = canvasElement2.getContext("2d");
-    ctx1.scale(-100,1)
-    ctx2.scale(-100,1)
     const webcamera = new Webcam(webcameraElement, "env", canvasElement);
     const webcamera2 = new Webcam(webcameraElement2, "env", canvasElement2);
     webcamera.start();
